@@ -49,8 +49,7 @@ body{
     color:rgb(210, 197, 197);  
     border: 1px solid rgb(210, 197, 197);   
 }
-
-.addStudentBtn .submitBtn {
+.addSubmitBtn .submitBtn {
     font-size: 22px;
     font-weight: 700;
     height: 35px;
@@ -58,7 +57,7 @@ body{
     margin: 37px 38px 37px 0px;
     margin-top: 33px;
 }
-.addStudentBtn :hover{
+.addSubmitBtn :hover{
     cursor: pointer;
     background-color: rgb(121, 219, 121);
     color: white;
@@ -73,7 +72,7 @@ body{
     font-size: 14px;
     color: white;
 }
-tablebody{
+#tablebody{
     height: auto;
 }
 
@@ -99,21 +98,21 @@ th,td{
     body {
       font-size: 14px;
     }
-    .container {
+    .main-container {
       margin: 10px;
       overflow-x: hidden;
     }
-    .input-container {
+    .inputs{
       grid-template-columns: repeat(1, 1fr);
       grid-row-gap: 10px;
     }
-    .input-container input {
+    .inputs input {
       width: 100%;
     }
     .table {
       font-size: 10px;
     }
-    .search, .button button {
+    .searchByName, .addStudentBtn button {
       width: 100%;
       margin: 10px 0px;
     }
