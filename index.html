@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="crud.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Main Container: div -->
+    <div class="main-container">
+        <h1>Student Management CRUD</h1>
+        <!-- Input Part -->
+        <div class="inputs">
+            <input type="text" class="name" placeholder="Name" >
+            <input type="email"  class="email" placeholder="Email" name="email" required>
+            <input type="number" class="gpa" placeholder="GPA" >
+            <input type="number" class="age" placeholder="Age" >
+            <input type="text" class="degree" placeholder="Degree" >
+        </div>
+  
+        <div class="addStudentBtn">
+            <button type="submit" class="submitBtn" onclick="addNewStudent()">Add Student</button>
+        </div>
+
+    
+        <input class="searchByName" type="text" placeholder="Search By Name, email or Degree" onkeyup="searchByName()">
+
+        <!-- Table -->
+        <table class="table" id="table">
+            <thead class="tablehead">
+                <tr>
+                    <th>ID</th>
+                    <th>Student Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>GPA</th>
+                    <th>Degree</th>
+                </tr>
+            </thead>
+    
+            <tbody class="tablebody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.main-container{
+    width: 100%;
+    height: 100%;
+    margin: 22px 47px;
+
+}
+.inputs{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    gap: 20px;
+}
+.inputs input{
+    background-color: black;
+    border: 2px solid rgb(245, 237, 237);
+    height: 38px;
+    padding-left: 8px;
+    width: 377px;
+    color: rgb(245, 237, 237);
+}
+
+.icons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap:10px
+}
+
+.searchByName{
+    width: 95%;
+    height: 35px;
+    padding: 0;
+    margin: 30px 0px;
+    padding-left: 12px;
+    background-color: black;
+    color:rgb(210, 197, 197);  
+    border: 1px solid rgb(210, 197, 197);   
+}
+
+.addStudentBtn .submitBtn {
+    font-size: 22px;
+    font-weight: 700;
+    height: 35px;
+    width: 467px;
+    margin: 37px 38px 37px 0px;
+    margin-top: 33px;
+}
+.addStudentBtn :hover{
+    cursor: pointer;
+    background-color: rgb(121, 219, 121);
+    color: white;
+}
+
+.table{
+    border: 1px solid lightgray;
+    width:95%;
+    border-spacing: 0;
+    min-height: 200px;
+    overflow-x: auto;
+    font-size: 14px;
+    color: white;
+}
+tablebody{
+    height: auto;
+}
+
+th{
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    padding: 10px;
+}
+
+td{
+    padding: 11px;
+    border: 1px solid white;
+}
+
+th,td{
+    text-align: center;
+}
+
+
+/* For screens smaller than 800px */
+@media (max-width: 800px) {
+    /* CSS styles here */
+    body {
+      font-size: 14px;
+    }
+    .container {
+      margin: 10px;
+      overflow-x: hidden;
+    }
+    .input-container {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 10px;
+    }
+    .input-container input {
+      width: 100%;
+    }
+    .table {
+      font-size: 10px;
+    }
+    .search, .button button {
+      width: 100%;
+      margin: 10px 0px;
+    }
+}
