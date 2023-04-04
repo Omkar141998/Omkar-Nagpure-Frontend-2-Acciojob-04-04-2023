@@ -10,7 +10,7 @@ function addNewStudent() {
     const studentDegree = document.getElementsByClassName("degree").value;
 
     //plz fill all mandotory field, Blank will not be Accepted.
-    if (studentName == "" || studentEmail == "" || studentAge == "" || studentGrade == "" || studentDegree == "") {
+    if (studentName == '' || studentEmail == '' || studentAge == '' || studentGrade == '' || studentDegree == '') {
         alert("All fields are required!")
         return;
     }
