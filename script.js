@@ -3,14 +3,14 @@ var studentsData = [];
 
 function addNewStudent() {
 
-    const nameValue = document.getElementById('name').value;
-    const emailValue = document.getElementById('email').value;
-    const ageValue = document.getElementById('age').value;
-    const gradeValue = document.getElementById('grade').value;
-    const degreeValue = document.getElementById('degree').value;
+    const nValue = document.getElementById('name').value;
+    const eValue = document.getElementById('email').value;
+    const aValue = document.getElementById('age').value;
+    const gValue = document.getElementById('grade').value;
+    const dValue = document.getElementById('degree').value;
 
     //Inputs Mandatory, Blank will not be submitted.
-    if (nameValue == '' || emailValue == '' || ageValue == '' || gradeValue == '' || degreeValue == "") {
+    if ( nValue == '' || eValue == '' ||  aValue == '' || gValue == '' || dValue == "") {
         alert("All fields are required!")
         return;
     }
@@ -19,7 +19,7 @@ function addNewStudent() {
     count++;
 
     studentsData.push({
-        ID: count, name: nameValue, email: emailValue, age: ageValue, grade: gradeValue, degree: degreeValue
+        ID: count, name:  nValue, email: eValue, age: aValue, grade:  gValue, degree: dValue
     });
 
     // Store the updated students array in local storage
